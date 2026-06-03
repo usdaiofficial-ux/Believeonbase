@@ -1,176 +1,189 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Believe on Base</title>
-
-<style>
-
-body{
+<title>BELIEVE | Built on Base</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"><style>
+*{
 margin:0;
 padding:0;
-background:#0052ff;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#050816;
 color:white;
-font-family:Arial,sans-serif;
-text-align:center;
+overflow-x:hidden;
 }
 
 .hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 padding:40px 20px;
+background:
+radial-gradient(circle at top,#1458ff55,transparent 50%),
+#050816;
 }
 
 .logo{
-width:220px;
-border-radius:30px;
-box-shadow:0 0 30px rgba(255,255,255,.2);
+width:120px;
+height:120px;
+border-radius:24px;
+margin-bottom:30px;
+box-shadow:0 0 40px #2b6fff;
 }
 
 h1{
-font-size:64px;
-margin:20px 0;
+font-size:70px;
+font-weight:900;
+letter-spacing:2px;
 }
 
-.subtitle{
-font-size:28px;
-font-weight:bold;
+.tagline{
+font-size:24px;
+margin-top:10px;
+opacity:.8;
 }
 
 .desc{
 max-width:800px;
-margin:auto;
-font-size:20px;
+margin-top:25px;
 line-height:1.7;
+font-size:18px;
+opacity:.85;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .btn{
-display:inline-block;
-margin-top:25px;
-padding:16px 40px;
-background:white;
-color:#0052ff;
+padding:14px 28px;
+border-radius:12px;
 text-decoration:none;
-font-weight:bold;
-border-radius:15px;
+font-weight:700;
+transition:.3s;
 }
 
-.card,
-.box,
-.roadmap{
-background:rgba(255,255,255,.1);
-margin:20px;
-padding:25px;
-border-radius:20px;
+.primary{
+background:#1f6fff;
+color:white;
 }
 
-.grid{
+.secondary{
+border:1px solid #1f6fff;
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:25px;
+}
+
+.cards{
 display:grid;
-grid-template-columns:1fr;
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#0d1328;
+padding:25px;
+border-radius:18px;
+border:1px solid #1f2a4d;
+}
+
+.card h3{
+color:#4c86ff;
+margin-bottom:10px;
+}
+
+.roadmap-item{
+background:#0d1328;
 padding:20px;
+border-radius:15px;
+margin-bottom:15px;
 }
 
-h2{
-font-size:32px;
+.footer{
+text-align:center;
+padding:40px;
+opacity:.6;
 }
 
-</style>
-</head>
+.ca-box{
+background:#0d1328;
+padding:20px;
+border-radius:15px;
+word-break:break-all;
+margin-top:15px;
+}
 
-<body>
-
-<div class="hero">
-
-<img src="logo.jpg" class="logo">
-
-<h1>Believe on Base</h1>
-
-<p class="subtitle">
-Building the Future of Decentralized Communities
+@media(max-width:768px){
+h1{
+font-size:48px;
+}
+.tagline{
+font-size:18px;
+}
+}
+</style></head><body><section class="hero"><<img src="logo.jpg" class="logo"><h1>BELIEVE</h1><p class="tagline">
+Believe in the Future. Believe in Base.
+</p><p class="desc">
+BELIEVE is a community-powered movement on Base focused on growth, innovation,
+and long-term adoption. Built by believers, for believers.
+</p><div class="buttons">
+<a href="#" class="btn primary">BUY BELIEVE</a>
+<a href="#" class="btn secondary">VIEW CHART</a>
+<a href="#" class="btn secondary">JOIN TELEGRAM</a>
+</div></section><section class="section">
+<h2>About BELIEVE</h2><p class="desc">
+BELIEVE is more than a token. It is a community dedicated to building
+the future of decentralized participation on Base.
 </p>
-
-<p class="desc">
-Believe on Base is a community-driven movement focused on growth,
-innovation, and mass adoption on Base.
-
-Together we create, build, earn, and inspire the next generation
-of decentralized communities worldwide.
-</p>
-
-<a href="#" class="btn">Join Community</a>
-
-</div>
-
-<div class="card">
-
-<h2>INTRODUCING BELIEVE ON BASE</h2>
-
-<p>
-Believe on Base is more than a project — it is a movement.
-Built on the Base ecosystem, our goal is to unite builders,
-creators, traders, and visionaries into one powerful community.
-</p>
-
-<p>
-We believe innovation grows through collaboration.
-Our mission is to create opportunities, support builders,
-and accelerate Web3 adoption worldwide.
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="box">
-<h2>VISION</h2>
-
-<p>
-To become the leading decentralized community on Base,
-inspiring millions of people worldwide and driving
-mass adoption of Web3.
-</p>
-
-</div>
-
-<div class="box">
-<h2>MISSION</h2>
-
-<p>
-• Build a strong global community<br>
-• Support creators and innovators<br>
-• Develop ecosystem utilities<br>
-• Promote transparency and trust
-</p>
-
-</div>
-
-<div class="box">
-<h2>MARKETING STRATEGY</h2>
-
-<p>
-• Viral social media campaigns<br>
-• Influencer & KOL partnerships<br>
-• Community contests and events<br>
-• Airdrops and giveaways<br>
-• Global branding expansion
-</p>
-
-</div>
-
-</div>
-
-<div class="roadmap">
-
-<h2>ROADMAP 2026 - 2027</h2>
-
-<p><b>Q2 2026</b> — Launch & Build</p>
-<p><b>Q3 2026</b> — Grow & Engage</p>
-<p><b>Q4 2026</b> — Develop & Expand</p>
-<p><b>Q1 2027</b> — Global Adoption</p>
-<p><b>Q2 2027</b> — Lead & Dominate</p>
-
-</div>
-
-</body>
+</section><section class="section">
+<h2>Token Metrics</h2><div class="cards"><div class="card">
+<h3>Symbol</h3>
+<p>BELIEVE</p>
+</div><div class="card">
+<h3>Chain</h3>
+<p>Base</p>
+</div><div class="card">
+<h3>Tax</h3>
+<p>0%</p>
+</div><div class="card">
+<h3>Community</h3>
+<p>Driven</p>
+</div></div>
+</section><section class="section"><h2>Roadmap</h2><div class="roadmap-item">
+✅ Website Launch
+</div><div class="roadmap-item">
+🚀 Community Growth
+</div><div class="roadmap-item">
+🔥 Marketing Expansion
+</div><div class="roadmap-item">
+🌎 Global Adoption
+</div></section><section class="section"><h2>Contract Address</h2><div class="ca-box">
+PASTE_YOUR_CONTRACT_ADDRESS_HERE
+</div></section><div class="footer">
+BELIEVE © 2026 | Built on Base
+</div></body>
 </html>
