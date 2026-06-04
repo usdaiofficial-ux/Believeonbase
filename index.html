@@ -201,20 +201,7 @@ font-size:18px;
         opacity:0;
     }
 }
-</style></head><script>
-const particlesContainer = document.getElementById('particles');
-
-for(let i=0;i<40;i++){
-    const p = document.createElement('div');
-    p.classList.add('particle');
-
-    p.style.left = Math.random()*100 + 'vw';
-    p.style.animationDuration = (5 + Math.random()*10) + 's';
-    p.style.animationDelay = Math.random()*5 + 's';
-
-    particlesContainer.appendChild(p);
-}
-</script><body><div class="glow one"></div>
+</style></head><body><div class="glow one"></div>
 <div class="glow two"></div>
 
 <div id="particles"></div> <section class="hero"><<img src="logo.jpg" class="logo"><h1>BELIEVE</h1><p class="tagline">
@@ -279,5 +266,19 @@ Our mission is to unite builders, creators, traders, and supporters under one po
 PASTE_YOUR_CONTRACT_ADDRESS_HERE
 </div></section><div class="footer">
 BELIEVE © 2026 | Built on Base
-</div></body>
+</div><script>
+const particlesContainer = document.getElementById('particles');
+
+for(let i=0;i<40;i++){
+    const p = document.createElement('div');
+    p.classList.add('particle');
+
+    p.style.left = Math.random()*100 + 'vw';
+    p.style.animationDuration = (5 + Math.random()*10) + 's';
+    p.style.animationDelay = Math.random()*5 + 's';
+
+    particlesContainer.appendChild(p);
+}
+</script>
+</body>
 </html>
