@@ -145,6 +145,62 @@ font-size:48px;
 font-size:18px;
 }
 }
+/* Animated Glow Background */
+.glow{
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#0052ff;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.25;
+    animation:float 8s ease-in-out infinite;
+    z-index:-1;
+}
+
+.glow.one{
+    top:-100px;
+    left:-100px;
+}
+
+.glow.two{
+    bottom:-100px;
+    right:-100px;
+    animation-delay:4s;
+}
+
+@keyframes float{
+    0%{transform:translate(0,0);}
+    50%{transform:translate(60px,40px);}
+    100%{transform:translate(0,0);}
+}
+
+/* Particles */
+.particle{
+    position:fixed;
+    width:4px;
+    height:4px;
+    background:#4c86ff;
+    border-radius:50%;
+    opacity:.6;
+    pointer-events:none;
+    z-index:-1;
+    animation:particleFloat linear infinite;
+}
+
+@keyframes particleFloat{
+    from{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-100px);
+        opacity:0;
+    }
+}
 </style></head><body><section class="hero"><<img src="logo.jpg" class="logo"><h1>BELIEVE</h1><p class="tagline">
 Believe in the Future. Believe in Base.
 </p><p class="desc">
